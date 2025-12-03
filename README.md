@@ -114,7 +114,8 @@ Include screenshots of the following:
 3. **PivotTable for Product Analysis**  
 4. **Slicers showing interactive filtering**  
 
-Example Markdown for screenshots:
+**Dirty Dataset**
+![Dirty_Data](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/092422b4aa16b0a1191d0a876c24b105c35b3b0e/dirtydatasett.png)
 
-![Summary Table]
-![PivotTable Product Analysis](screenshots/pivot_product_analysis.png)
+**Cleaned Data into table
+![Cleaned Data into table](screenshots/pivot_product_analysis.png)
