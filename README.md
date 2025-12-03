@@ -109,13 +109,16 @@ Key techniques applied:
 
 ## Screenshots
 Include screenshots of the following:
-1. **Dirty Datasets before cleaning**
-2. **Summary Table with totals and percentages**  
-3. **PivotTable for Product Analysis**  
-4. **Slicers showing interactive filtering**  
+1. **SSample Dirty Datasets before cleaning**
+2. **Sample Summary Table with totals and percentages**  
+3. **PivotTable for Product Analysis and Slicers showing interactive filtering**   
 
-**Dirty Dataset**
+**Sample Dirty Dataset**
 ![Dirty_Data](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/092422b4aa16b0a1191d0a876c24b105c35b3b0e/dirtydatasett.png)
 
-**Cleaned Data into table
-![Cleaned Data into table](screenshots/pivot_product_analysis.png)
+**Sample Cleaned Data into table**
+![Cleaned Data into table](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/9e69a2e1db6ab0750baf74f57705ce399a321d39/tablee.png)
+
+**PivotTable for Product Analysis and Slicers showing interactive filtering**
+![Pivot Table](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/9e69a2e1db6ab0750baf74f57705ce399a321d39/tablee.png)
+
