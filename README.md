@@ -1,97 +1,119 @@
-# Executive-Data-Summary-Sales-Analysis-Q1-2023-Excel-
-Executive Data Summary of Q1 2023 sales. Calculates totals, percentage changes, and projects Q2 targets using Excel formulas and PivotTables.
-# Executive Data Summary – Sales Analysis Q1 2023
+# Quarter One Sales Analysis – Adventure Works
 
-**Author:** Your Name  
-**Course:** Coursera – Excel Skills for Business  
-**Date:** YYYY-MM-DD  
+**Author:** Abdulhaire Rahaman    
+**Date:** 2023-11-3  
 
 ---
 
 ## Case Study / Project Scenario
-The dataset represents Q1 2023 sales for multiple teams and team members. The objectives of this project were to:  
-1. Calculate the overall sales total.  
-2. Break down sales by team and by individual team member.  
-3. Compare Q1 2023 sales to Q1 2022 and calculate the percentage difference.  
-4. Project Q2 2023 sales targets using a 10% increase.  
+Jamie, at Adventure Works, is attending a management meeting and has been asked to prepare an Excel file that presents sales figures for Q1 and compares these figures to the same period in the previous year. The management team also wants insight into the sales performance of individual product lines.
 
-All analysis, formulas, and PivotTables in this repository are based on this scenario.
+**Project Objectives:**
+1. Calculate total Q1 sales for 2022 and 2023.  
+2. Calculate the percentage increase in sales for 2023.  
+3. Break down totals by month.  
+4. Create a PivotTable for individual product and product category analysis.
 
 ---
 
 ## Project Overview
-This project demonstrates how Excel can be used for executive reporting and decision-making. Using formulas, PivotTables, and formatting, the analysis provides a clear view of sales performance and future targets.
+This project demonstrates the use of Excel for executive reporting. It includes data cleaning, formulas, tables, and PivotTables to produce an interactive report for management.  
+
+Key techniques applied:
+- Formulas for total sales, monthly breakdowns, tax, and percentage increase.  
+- Logical formulas (`IF`) for conditional calculations.  
+- Use of Excel Tables for organized datasets.  
+- PivotTables with slicers for dynamic analysis.  
+- Formatting and presentation improvements.
 
 ---
 
 ## Data Overview
-| Column Name | Description | Notes / Cleaning Required |
-|------------|-------------|--------------------------|
-| Total Sales | Dollar value of sales per entry | Checked format as Currency |
-| Team | Sales team name | Standardized names |
-| Team Members | Individual responsible | Corrected blended entries |
-| Product | Product category | Extracted using `MID` and `RIGHT` functions |
-| Date | Date of sale | Standardized MM/DD/YYYY |
-| Other Columns | __________________ | __________________ |
+| Column | Description | Notes |
+|--------|------------|-------|
+| Product Name | Name of the product | Converted to Proper Case using `PROPER()` |
+| Product Category | Category of product | Used in PivotTable Slicer |
+| Order Date | Date of sale | Extracted Month and Year |
+| Retail Price | Price per unit | Multiplied by quantity for totals |
+| Quantity Sold | Units sold | Used in sales calculations |
+| Order Total | Calculated as Retail Price × Quantity | Formula applied across dataset |
+| Tax | Calculated if Order Total > 2000 | Formula: `=IF(P2>2000,P2*0.05,0)` |
 
-> **Dataset Source:** Simulated dataset from Coursera
+> Dataset used: `Quarter One Report.xlsx` (full dataset included in `data/` folder)
 
 ---
 
 ## Methodology
-- **Freeze Panes** for row 1 and column A  
-- **Merge & Center** for table headings  
-- Applied formulas:  
-  - `SUM`, `AVERAGE`, `SUMIF`  
-  - `NETWORKDAYS` to calculate weekdays  
-  - Percentage difference: `(F10-E10)/E10`  
-- Created PivotTables:  
-  - Rows: Team → Team Members  
-  - Values: Total Sales  
-  - Calculated Field: Q2 Target = Total Sales × 110%  
-- Applied number formatting: Currency, Percentage, General  
+1. **Data Cleaning & Formatting**
+   - Converted product names to proper case.  
+   - Sorted data by Order Date.  
+   - Hid irrelevant columns.  
+   - Freeze Panes applied to keep headings visible.  
+
+2. **Formulas & Calculations**
+   - Total sales for 2022 and 2023 using `SUMIFS`.  
+   - Monthly totals using `SUMIFS` by month criteria.  
+   - Percentage difference: `(2023_Total - 2022_Total)/2022_Total`.  
+   - Tax calculated using `IF` function.  
+   - Order Total calculated as `Retail_Price × Quantity`.  
+
+3. **Tables & PivotTables**
+   - Converted data range into a Table named `Sales_details`.  
+   - Created PivotTable on a new worksheet (`Product Analysis`).  
+   - PivotTable fields:  
+     - Rows: Product Name  
+     - Values: Order Total (sum and % of grand total)  
+   - Added Slicers: Product Category & Year  
+   - Applied Tabular Form layout and custom number formatting.
 
 ---
 
 ## Key Findings
 | Metric | Result |
 |--------|-------|
-| Total Sales Q1 2023 | $XXX,XXX |
-| Top Performing Team | Team A |
-| Average Sales per Member | $XX,XXX |
-| Q2 Target | $XXX,XXX |
+| Total Sales 2022 | $XXX,XXX |
+| Total Sales 2023 | $XXX,XXX |
+| Percentage Increase | XX% |
+| Top Performing Product | Product Name |
+| PivotTable Analysis | Interactive dashboard available |
 
-> Screenshots are stored in the `screenshots/` folder.  
+> PivotTable provides management with quick insight into sales per product and category.
 
 ---
 
 ## Formulas Used
-| Function / Formula | Purpose | Example |
-|------------------|---------|---------|
-| `=SUM(E4:E246)` | Total sales | Total Q1 sales |
-| `=AVERAGE(C1:C5)` | Average per member | Average sales per team member |
-| `=SUMIF(range, criteria, sum_range)` | Conditional sum | Sales > $5,000 |
-| `=NETWORKDAYS(A2,B2)` | Count weekdays | Workdays between start and end date |
-| `=IF(AND(...),...,...)` | Conditional logic | Discounts or bonuses |
-| `=(F10-E10)/E10` | Percentage difference | YoY sales growth |
-| PivotTables | Summarize data | Team and member breakdowns |
+| Formula | Purpose |
+|---------|---------|
+| `=SUMIFS(R2:R246,L2:L246,2022)` | Total sales for 2022 |
+| `=SUMIFS(R2:R246,L2:L246,2023)` | Total sales for 2023 |
+| `=(C6-B6)/B6` | Percentage increase |
+| `=MONTH(J2)` / `=YEAR(J2)` | Extract month and year from order date |
+| `=P2*0.05` | Tax calculation if order total > 2000 |
+| `=IF(P2>2000,P2*0.05,0)` | Conditional tax logic |
 
 ---
 
 ## Challenges & Solutions
-- Blended product entries → Used `MID` and `RIGHT` to separate product category  
-- Empty cells affected averages → Excel ignores blanks by default  
-- Formatting inconsistencies → Standardized currency and dates  
+- Blended product names → Used `PROPER()` to standardize formatting.  
+- Empty cells in monthly totals → SUMIFS ignores blanks.  
+- PivotTable formatting → Applied Tabular Form and custom number formatting.  
 
 ---
 
 ## Next Steps
-- Automate future reporting using **Power Query**  
-- Add charts and conditional formatting for visual insights  
-- Expand to full-year sales dashboards  
+- Automate quarterly reporting using **Power Query**.  
+- Add charts and conditional formatting for visual insights.  
+- Expand analysis to full-year dashboards.  
 
 ---
 
 ## Screenshots
-![Pivot Table](screenshots/pivot_table.png)  
-![Q2 Target Calculation](screenshots/q2_target.png)
+Include screenshots of the following:
+1. **Summary Table with totals and percentages**  
+2. **PivotTable for Product Analysis**  
+3. **Slicers showing interactive filtering**  
+
+Example Markdown for screenshots:
+```markdown
+![Summary Table](screenshots/summary_table.png)
+![PivotTable Product Analysis](screenshots/pivot_product_analysis.png)
