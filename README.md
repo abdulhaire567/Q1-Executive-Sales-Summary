@@ -109,11 +109,12 @@ Key techniques applied:
 
 ## Screenshots
 Include screenshots of the following:
-1. **Summary Table with totals and percentages**  
-2. **PivotTable for Product Analysis**  
-3. **Slicers showing interactive filtering**  
+1. **Dirty Datasets before cleaning**
+2. **Summary Table with totals and percentages**  
+3. **PivotTable for Product Analysis**  
+4. **Slicers showing interactive filtering**  
 
 Example Markdown for screenshots:
-```markdown
-![Summary Table](screenshots/summary_table.png)
+
+![Summary Table]
 ![PivotTable Product Analysis](screenshots/pivot_product_analysis.png)
