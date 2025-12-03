@@ -71,8 +71,8 @@ Key techniques applied:
 ## Key Findings
 | Metric | Result |
 |--------|-------|
-| Total Sales 2022 | $XXX,XXX |
-| Total Sales 2023 | $XXX,XXX |
+| Total Sales 2022 | $330,000 |
+| Total Sales 2023 | $453,830 |
 | Percentage Increase | XX% |
 | Top Performing Product | Product Name |
 | PivotTable Analysis | Interactive dashboard available |
