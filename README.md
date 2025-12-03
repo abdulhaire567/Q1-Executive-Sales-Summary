@@ -106,7 +106,7 @@ Key techniques applied:
 ---
 
 ## Screenshots
-Include screenshots of the following:
+Sample screenshots. Full dataset available in the Excel file
 1. **Sample Dirty Datasets before cleaning**
 2. **Sample Summary Table with totals and percentages**  
 3. **PivotTable for Product Analysis, Slicers showing interactive filtering and pivot chart**   
