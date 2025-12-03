@@ -72,7 +72,6 @@ Key techniques applied:
 | Total Sales 2022 | $330,000 |
 | Total Sales 2023 | $453,830 |
 | Percentage Increase | 37.32% |
-| Top Performing Product | Product Name |
 | PivotTable Analysis | Interactive dashboard available |
 
 > PivotTable provides management with quick insight into sales per product and category.
