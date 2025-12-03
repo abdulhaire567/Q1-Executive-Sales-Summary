@@ -109,7 +109,7 @@ Key techniques applied:
 
 ## Screenshots
 Include screenshots of the following:
-1. **SSample Dirty Datasets before cleaning**
+1. **Sample Dirty Datasets before cleaning**
 2. **Sample Summary Table with totals and percentages**  
 3. **PivotTable for Product Analysis and Slicers showing interactive filtering**   
 
@@ -120,5 +120,5 @@ Include screenshots of the following:
 ![Cleaned Data into table](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/9e69a2e1db6ab0750baf74f57705ce399a321d39/tablee.png)
 
 **PivotTable for Product Analysis and Slicers showing interactive filtering**
-![Pivot Table](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/9e69a2e1db6ab0750baf74f57705ce399a321d39/tablee.png)
+![Pivot Table](https://github.com/abdulhaire567/Q1-Executive-Sales-Summary/blob/24191c11b8e216be058602da215dc9f3747a0a00/pivot%20table.png)
 
