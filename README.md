@@ -1,8 +1,6 @@
 # Quarter One Sales Analysis – Adventure Works
 
-**Author:** Abdulhaire Rahaman    
-**Date:** 2023-11-3  
-
+**Author:** Abdulhaire Rahaman      
 ---
 
 ## Case Study / Project Scenario
